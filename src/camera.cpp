@@ -8,6 +8,8 @@
 
 STAT_COUNTER("Integrator/Camera rays traced", num_camera_rays);
 
+cout << "Hello Pape! I hope this works";
+
 Camera::Camera(const json &j)
 {
     m_camera_to_world   = j.value("transform", m_camera_to_world);
