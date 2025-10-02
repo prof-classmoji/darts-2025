@@ -5,6 +5,7 @@
 */
 #include <darts/camera.h>
 #include <darts/stats.h>
+#include <fries/pape.h>
 
 STAT_COUNTER("Integrator/Camera rays traced", num_camera_rays);
 
