@@ -1,0 +1,184 @@
+{
+    "media": [],
+    "camera": {
+        "vertical fov": 19.99999941818584,
+        "resolution": [
+            1080,
+            1920
+        ],
+        "transform": {
+            "from": [
+                16.36552619934082,
+                -17.040708541870117,
+                10.317359924316406
+            ],
+            "up": [
+                -0.1962118148803711,
+                0.2039337456226349,
+                0.959120512008667
+            ],
+            "at": [
+                15.700557708740234,
+                -16.349529266357422,
+                10.034361839294434
+            ]
+        }
+    },
+    "sampler": {
+        "samples": 256,
+        "type": "stochastic sobol"
+    },
+    "background": {
+        "type": "background",
+        "color": [
+            1.0,
+            1.0,
+            1.0
+        ]
+    },
+    "accelerator": {
+        "type": "bbh"
+    },
+    "materials": [
+        {
+            "type": "diffuse",
+            "name": "default",
+            "color": 0.2
+        },
+        {
+            "name": "Ground",
+            "type": "diffuse",
+            "color": {
+                "type": "checker",
+                "scale": 0.5,
+                "color2": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929
+                ],
+                "color1": [
+                    0.20000000298023224,
+                    0.20000000298023224,
+                    0.20000000298023224
+                ],
+                "vector": {
+                    "type": "mapping",
+                    "vector type": "point",
+                    "transform": [
+                        {
+                            "rotate": [
+                                0.0,
+                                1,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "rotate": [
+                                0.0,
+                                0,
+                                1,
+                                0
+                            ]
+                        },
+                        {
+                            "rotate": [
+                                15.000000417413029,
+                                0,
+                                0,
+                                1
+                            ]
+                        }
+                    ],
+                    "vector": {
+                        "type": "coord",
+                        "coordinate": "world"
+                    }
+                }
+            },
+            "roughness": 0.0
+        },
+        {
+            "name": "Statue",
+            "type": "mix",
+            "factor": {
+                "type": "fresnel",
+                "ior": 1.5
+            },
+            "a": {
+                "type": "diffuse",
+                "color": [
+                    0.2845454216003418,
+                    0.23733562231063843,
+                    0.1512567102909088
+                ],
+                "roughness": 0.0
+            },
+            "b": {
+                "type": "metal",
+                "roughness": 0.20000000298023224,
+                "color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ],
+    "surfaces": [
+        {
+            "type": "mesh",
+            "name": "Plane",
+            "filename": "../assets/Plane.obj",
+            "material": "default",
+            "vertex colorspace": "srgb",
+            "transform": {
+                "matrix": [
+                    150.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    150.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "mesh",
+            "name": "Ajax",
+            "filename": "../assets/Ajax.obj",
+            "material": "default",
+            "vertex colorspace": "srgb",
+            "transform": {
+                "matrix": [
+                    -0.040167611092329025,
+                    -1.47919179127598e-08,
+                    0.19592489302158356,
+                    0.0,
+                    0.19592489302158356,
+                    -3.0325701949607264e-09,
+                    0.040167611092329025,
+                    0.0,
+                    0.0,
+                    0.20000000298023224,
+                    1.5099580252808664e-08,
+                    -2.842170943040401e-14,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        }
+    ]
+}

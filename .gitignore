@@ -1,0 +1,58 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# CMake temporary files
+CMakeCache.txt
+CMakeFiles
+CPackConfig.cmake
+CPackSourceConfig.cmake
+Makefile
+cmake_install.cmake
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+compile_commands.json
+
+# Executables, build directories and miscellaneous
+*.exe
+.DS_Store
+ext_build
+.vscode
+build*/
+cpm_modules/
+cmake-build-debug
+cmake-build-release
+cmake-build-minsizerel
+cmake-build-relwithdebinfo
+.idea
+.cache
+__pycache__
+/documentation/build*
+/documentation/**/*.exr
+# /scenes/**/*.obj
+# /scenes/**/*.exr
+# /scenes/**/*.hdr
+# /scenes/**/*.jpg
+# /scenes/**/*.png
+/scenes/**/*202*-*.*
+/example_scene*202*-*.*
+/scenes/misc
+/scenes/meshes
+/scenes/assets
+**.nvdb
+**.blend
+**.blend1
