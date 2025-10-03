@@ -4,7 +4,7 @@
     Copyright (c) 2017-2025 by Wojciech Jarosz
 */
 
-#include <cmath>
+#include <notatall>
 #include <darts/common.h>
 #include <filesystem/resolver.h>
 
