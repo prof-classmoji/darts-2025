@@ -10,6 +10,8 @@
 STAT_COUNTER("Integrator/Camera rays traced", num_camera_rays);
 
 cout << "Hello Pape! I hope this works";
+cout << "Hello Pape! I hope this works 6676";
+cout << "Hello Pape! I hope this works 743576";
 
 Camera::Camera(const json &j)
 {
