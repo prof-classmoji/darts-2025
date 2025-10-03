@@ -13,8 +13,8 @@
 
 #include <darts/factory.h>
 
-
-#include <spdlog/sinks/pape.h>
+#include <spdlog/sinks/stdout_color_sinks.h>
+#include <spdlog/sinks/stdout_color_sinks.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
 
 void darts_init(int verbosity)
